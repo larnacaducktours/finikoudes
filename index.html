@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finikoudes Duck Tours</title>
+    <title>Booking - Finikoudes Duck Tours</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,31 +21,29 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Explore Finikoudes with Duck Tours!</h2>
-            <p>Experience the best views and adventures on our unique Duck Tours.</p>
-            <a href="booking.html" class="cta-button">Book Now</a>
-        </div>
-    </section>
+    <section>
+        <h2>Book Your Tour</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <section id="about">
-        <h2>About Duck Tours</h2>
-        <p>Join us for a fun and educational tour of Finikoudes. Our amphibious vehicles will take you on a journey through both land and water, offering a unique perspective of the city's landmarks and natural beauty.</p>
-    </section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/72000/72711-Finikoudes-Beach.jpg" alt="Finikoudes Beach">
-            <img src="https://lazuliapartments.com/wp-content/uploads/2019/01/finikoudes-4.-1png.png" alt="Finikoudes Beach View">
-            <img src="https://sunshadowinvest.com/wp-content/uploads/2019/11/cyprus-4125775-1.jpg" alt="City Sights">
-            <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/72000/72706-Finikoudes-Beach.jpg" alt="Tourists Enjoying the Ride">
-        </div>
+            <label for="date">Tour Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" max="10" required>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <footer>
         <p>Contact us at <a href="mailto:larnacaducktours@gmail.com">larnacaducktours@gmail.com</a></p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
